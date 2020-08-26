@@ -29,9 +29,9 @@
   <body>
     <div class="container">
       <header class="header">
-        <span class="header__logo">
-          José Lages<span class="logo__left-hand">&#129308;</span
-          ><span class="logo__right-hand">&#129307;</span>
+        <span class="header__logo js-headerLogo">
+          José Lages<span class="logo__left-hand js-leftHand">&#129308;</span
+          ><span class="logo__right-hand js-rightHand">&#129307;</span>
         </span>
         <nav class="header__nav">
           <ul>
@@ -155,39 +155,63 @@
 
       <section id="work" class="section -lightgrey_bg">
         <div class="section__info -start">
-          <div class="info__wrap">
+          <div class="info__wrap -work">
             <h2 class="info__txt">
               For design work go check my
               <a
-                class="social__link -behance"
+                class="social__link -behance js-link"
                 href="https://www.behance.net/JoseLages"
+                data-social="behance"
                 >Behance</a
               >. You can see some fun bits of code at my
               <a
                 href="https://codepen.io/JoseLages"
-                class="social__link -codepen"
+                class="social__link -codepen js-link"
+                data-social="codepen"
                 >Codepen</a
               >
               or check some of my side projects on my
               <a
                 href="https://github.com/joselages"
-                class="social__link -github"
+                class="social__link -github js-link"
+                data-social="github"
                 >Github</a
               >.
             </h2>
+            <p class="info__p">Work section under construction...</p>
           </div>
         </div>
-        <img
-          class="section__photo -end"
-          src="./assets/images/foto-port_final-min.jpg"
-          alt="Photo of me in BW"
-        />
+        <div class="work__icons -end">
+          <a href="https://www.behance.net/JoseLages">
+            <img
+              class="work__icon -behance js-socialIcon"
+              src="./assets/images/social/behance.svg"
+              alt=""
+              data-social="behance"
+            />
+          </a>
+          <a href="https://github.com/joselages">
+            <img
+              class="work__icon -github js-socialIcon"
+              src="./assets/images/social/github.svg"
+              alt=""
+              data-social="github"
+          /></a>
+          <a href="https://codepen.io/JoseLages">
+            <img
+              class="work__icon -codepen js-socialIcon"
+              src="./assets/images/social/codepen.svg"
+              alt=""
+              data-social="codepen"
+            />
+          </a>
+        </div>
       </section>
 
-      <section id="contacts" class="section -reverse">
-        <div class="section__info -end">
+      <section id="contacts" class="section -nogrid">
+        <div class="section__info">
           <div class="info__wrap">
-            <h2 class="info__txt">
+            <h2 class="info__txt -contact">
               You can follow me on
               <a
                 class="social__link -twitter"
@@ -207,12 +231,45 @@
             </h2>
           </div>
         </div>
-        <img
-          class="section__photo -start"
-          src="./assets/images/foto-port_final-min.jpg"
-          alt="Photo of me in BW"
-        />
       </section>
+      <footer class="footer">
+        <a class="footer__logo" href="#aboutme">José Lages</a>
+        <div class="footer__social">
+          <a href="https://www.behance.net/JoseLages"
+            ><img
+              class="footer__icon -nomargin"
+              src="./assets/images/social/behance-black.svg"
+              alt=""
+          /></a>
+          <a href="https://github.com/joselages"
+            ><img
+              class="footer__icon"
+              src="./assets/images/social/github.svg"
+              alt=""
+          /></a>
+          <a href="https://codepen.io/JoseLages"
+            ><img
+              class="footer__icon"
+              src="./assets/images/social/codepen.svg"
+              alt=""
+          /></a>
+          <a href="https://twitter.com/losejages"
+            ><img
+              class="footer__icon"
+              src="./assets/images/social/twitter.svg"
+              alt=""
+          /></a>
+          <a href="https://www.linkedin.com/in/jose-lages/"
+            ><img
+              class="footer__icon"
+              src="./assets/images/social/linkedin-black.svg"
+              alt=""
+          /></a>
+        </div>
+        <a class="footer__link" href="mailto:jose.lages.d12@gmail.com"
+          >jose.lages.d12@gmail.com</a
+        >
+      </footer>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
