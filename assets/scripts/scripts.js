@@ -38,4 +38,16 @@ $(document).ready(function () {
   $(".js-link").on("mouseleave", function () {
     $(".js-socialIcon").removeClass("-active");
   });
+
+  $(".js-emailCopy").on("click", function () {
+    var copyText = document.querySelector(".js-textArea");
+    copyText.select();
+    document.execCommand("copy");
+
+    $(".js-infoCopy").addClass("-hop").text(" (email copied to clipboard!)");
+
+    setTimeout(function () {
+      $(".js-infoCopy").removeClass("-hop").text(" (click to copy)");
+    }, 2000);
+  });
 });

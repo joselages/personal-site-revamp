@@ -34,11 +34,19 @@
           ><span class="logo__right-hand js-rightHand">&#129307;</span>
         </span>
         <nav class="header__nav">
-          <ul>
-            <li class="nav__link"><a href="#aboutme">About me</a></li>
-            <li class="nav__link"><a href="#skills">Skills</a></li>
-            <li class="nav__link"><a href="#work">Work</a></li>
-            <li class="nav__link"><a href="#contacts">Contacts</a></li>
+          <ul class="nav__list">
+            <li class="nav__link">
+              <a class="link__anchor" href="#aboutme">About</a>
+            </li>
+            <li class="nav__link">
+              <a class="link__anchor" href="#skills">Skills</a>
+            </li>
+            <li class="nav__link">
+              <a class="link__anchor" href="#work">Work</a>
+            </li>
+            <li class="nav__link">
+              <a class="link__anchor" href="#contacts">Contacts</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -222,15 +230,24 @@
                 class="social__link -linkedin"
                 href="https://www.linkedin.com/in/jose-lages/"
                 >LinkedIn</a
-              >. For a more direct contact, send me an
-              <a
-                class="social__link -email"
-                href="mailto:jose.lages.d12@gmail.com"
-                >email!</a
-              >
+              >. For a more direct contact, send me an <wbr />
+              <span
+                role="button"
+                tabindex="0"
+                class="social__link -email js-emailCopy"
+                >email!</span
+              ><small class="-discrete js-infoCopy"> (click to copy)</small>
             </h2>
           </div>
         </div>
+
+        <textarea
+          class="hidden-textarea js-textArea"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+jose.lages.d12@gmail.com</textarea
+        >
       </section>
       <footer class="footer">
         <a class="footer__logo" href="#aboutme">José Lages</a>
