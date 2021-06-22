@@ -1,13 +1,16 @@
 $(document).ready(function () {
   ({
     elements: { $ageTxt: $(".js-ageTxt") },
-    birthday: new Date(1992, 6, 11),
+    birthday: new Date('1992-06-11'),
     today: new Date(),
     init: function () {
-      var t = Math.floor((this.today - this.birthday) / 31536e6);
+      var t = Math.floor((this.today - this.birthday.getTime()) / 3.15576e+10);
+      console.log(t);
+
       this.elements.$ageTxt.html(t);
     },
   }.init());
+
   var t = {
     lastId: null,
     $bottomNav: $(".js-nav"),
